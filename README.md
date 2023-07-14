@@ -2,12 +2,12 @@
 <h1>Python Based Port Scanner Script</h1>
 
 <h2>Description</h2>
-<br> This Project was designed In order to demonstrate the practical applications of a Python-based script with the capability of carrying out network reconnaissance. The program is capable of taking a user-specified host IP address for the purposes of a scan in order to identify potentilly vulnerable ports and by externsion the services operating on them. The program it is also capable of taking a list of host addresses from an input .txt file and performing a subsequest scan on each listed address therein, thus automating the scanning process. Currently the porgram must be given a specific port to scan in the form of a command line argument when running the script in a terminal, however the goal is to optionally allow for a range of ports to be scannned in a single instance. Finally the program can carry out limited logging to a file for the purposes of usage history tracking with dated entries for increased accuracy. </br>
+<br> This Project was designed In order to demonstrate the practical applications of a Python-based script with the capability of carrying out network reconnaissance. The program is capable of taking a user-specified host IP address for the purposes of a scan in order to identify potentially vulnerable ports and by externsion the services operating on them. The program is also capable of taking a list of host addresses from an input .txt file and performing a subsequent scan on each listed address therein, thus automating the scanning process. Currently the prorgram must be given a specific port to scan in the form of a command line argument when running the script in a terminal, however the goal is to optionally allow for a range of ports to be scannned in a single instance. Finally the program can carry out limited logging to a file for the purposes of usage history tracking with dated entries for increased accuracy. </br>
 
 <h2>Typical Usage Instructions:</h2>
 Located at the bottom of the readme is a screenshot of the working script just after being ran which includes the detailed usage instructions.                       
 Typical usage is: "python {filename}.py {-H for a specific target IP} OR {-T filename with the list of addresses} {-P and the port number to scan}"   
-This should look like: "python Scanner.py -H 8.8.8.8 -P 80" to use the logfile fucntion simply add after that "-L {your outputfile.txt}" 
+This should look like: "python Scanner.py -H 8.8.8.8 -P 80" to use the logfile function simply add after that "-L {your outputfile.txt}" 
 
 
 <h2>A note from myself:</h2>
