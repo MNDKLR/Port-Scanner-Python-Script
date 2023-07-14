@@ -20,7 +20,7 @@ def start_banner():
 ### :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ### \n
 User Guide / Description:                         
 ======================================================================== 
-A Basic Port Scanner & Network Reconnaissance Written 
+A Basic Port Scanner & Network Reconnaissance tool Written 
 In Python.
 ========================================================================
 (1 Required): [-H] { Target Host} OR  [-T] {Input File Containing Hosts}
