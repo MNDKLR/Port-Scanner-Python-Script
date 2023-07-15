@@ -18,7 +18,7 @@ Typical usage is: "python {filename}.py {-H for a specific target IP} OR {-T fil
 This should look like: "python Scanner.py -H 8.8.8.8 -S 1 -E 100" to use the logfile function simply add after that "-L {your outputfile.txt}" 
 
 
-<h2>A note from myself:</h2>
+<h2>Another note from myself:</h2>
 <br> As my first personal project this was an exciting way to not only test my own programming proficiency but to also create a piece of work closely tied to an industry that I am passionate about. My hope is that this project and others like it in the future can have a place to be seen like a portfolio. Finally It must be noted that THIS PROJECT IS STILL IN DEVELOPMENT but more importantly I hope this has been an interesting read for you, cheers! -Taylor</br>
 
 <h2>Environments Used </h2>
