@@ -45,7 +45,8 @@ def read_file(filename):
 def print_and_log(message):
     print(message)
     if args.logfile:
-        logging.info(message)
+        with open(args.logfile, 'a') as f:
+             f.write(message + '\n')
 ########################### IP Scanning ###########################
 def scan_host(host, port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as scan:
@@ -67,10 +68,10 @@ start_banner()
 threads = [] 
 
 if not args.host and not args.target_file: 
-    print("============================== ERROR: ===================================")
-    print("  Either -H or -T argument must be provided  ")
-    print("=========================================================================")
-    print("\n")
+    print_and_log("============================== ERROR: ===================================")
+    print_and_log("           Either -H or -T argument must be provided  ")
+    print_and_log("=========================================================================")
+    print_and_log("\n")
     sys.exit(1)
 
 target_hosts = []
@@ -99,7 +100,7 @@ try:
             t.start()
             threads.append(t)
 except KeyboardInterrupt:
-    print("Program Interrupted By User")
+    print_and_log("Program Interrupted By User")
 for t in threads:
     t.join()
 
@@ -114,8 +115,8 @@ for host, ports in scan_summary.items():
 
 time_end = datetime.now()
 runtime = time_end - time_start
-print_and_log("Scan Began: [{}]".format(time_start))
-print_and_log("Scan Ended: [{}] ".format(time_end))
-print_and_log("Runtime:    [{}] ".format(runtime))
+print_and_log("Start Time: [{}]".format(time_start))
+print_and_log("End Time:   [{}] ".format(time_end))
+print_and_log("Duration:   [{}] ".format(runtime))
 print_and_log("=========================================================================")
 print_and_log("\n")
