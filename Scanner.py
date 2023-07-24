@@ -26,7 +26,7 @@ In Python.
 =========================================================================
 (1 Required): [-H] {Target Host} OR  [-T] {Input File Containing Hosts}
 (2 Required): [-S] {Start Port}  AND [-E] {End Port}
-(3 Optional): [-L] {LogFile}""") 
+(3 Optional): [-L] {Full Path + file.txt}""") 
 pass
 ######################## Arguments Parsing ########################
 def parse_arguments():
