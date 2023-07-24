@@ -3,7 +3,7 @@
 
 <p align="center">
 Launched Program In Terminal Environment:<br/>
-<img src="https://i.imgur.com/UqlEdCS.png" height="80%" width="80%" alt="Launched Program"/>
+<img src="https://i.imgur.com/tJTEEgk.png" height="80%" width="80%" alt="Launched Program"/>
 </p>
 
 <h2>Description</h2>
